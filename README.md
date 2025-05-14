@@ -56,31 +56,13 @@ You will be prompted to choose:
 
 2. Custom processes:
 
-➥Specify number of processes (1–10)
+➥ Specify number of processes (1–10)
 
-➥For each process:
+➥ For each process:
 
-   ● Single-character ID
+   1. Single-character ID
 
-   ● Total CPU time required (in ms)
-
-## 📋 Sample Output (Default Configuration)
-
-======= Final Results =======
-
-Process    Total Time    Turnaround Time
-
-A          300           1290
-
-B          150            730
-
-C          250           1135
-
-D          350           1395
-
-E          450           1500
-
-Average Turnaround Time: 1210.00
+   2. Total CPU time required (in ms)
 
 ## 🔍 Implementation Details
 
