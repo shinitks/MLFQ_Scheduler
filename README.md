@@ -24,78 +24,83 @@ Processes move between these queues depending on their execution status. Unfinis
 📈 Calculates individual and average turnaround times
 
 ## ⚙️ Requirements
-Linux/Unix system
+● Linux/Unix system
 
-GCC compiler
+● GCC compiler
 
-pthread library
+● pthread library
 
 ## 🛠️ Compilation
 To compile the program, run:
 
 gcc mlfq.c -o mlfq -lpthread
 
-▶️ Usage
+## ▶️ Usage
 Run the compiled executable:
 
 ./mlfq
 
 You will be prompted to choose:
 
-Default processes:
+1. Default processes:
 
-A: 300ms
+  ● A: 300ms
 
-B: 150ms
+  ● B: 150ms
 
-C: 250ms
+  ● C: 250ms
 
-D: 350ms
+  ● D: 350ms
 
-E: 450ms
+  ● E: 450ms
 
-Custom processes:
+2. Custom processes:
 
-Specify number of processes (1–10)
+➥Specify number of processes (1–10)
 
-For each process:
+➥For each process:
 
-Single-character ID
+   ● Single-character ID
 
-Total CPU time required (in ms)
+   ● Total CPU time required (in ms)
 
-📋 Sample Output (Default Configuration)
-yaml
-Copy
-Edit
+## 📋 Sample Output (Default Configuration)
+
 ======= Final Results =======
+
 Process    Total Time    Turnaround Time
+
 A          300           1290
+
 B          150            730
+
 C          250           1135
+
 D          350           1395
+
 E          450           1500
+
 Average Turnaround Time: 1210.00
 
 ## 🔍 Implementation Details
 
-Simulates CPU execution using usleep()
+● Simulates CPU execution using usleep()
 
-Thread-safe queues with mutex locks
+● Thread-safe queues with mutex locks
 
-Tracks state transitions across queues
+● Tracks state transitions across queues
 
-Displays detailed scheduling steps and queue transitions
+● Displays detailed scheduling steps and queue transitions
 
 ## 🧹 Cleanup
-Automatic cleanup of memory and mutexes after execution
+● Automatic cleanup of memory and mutexes after execution
 
 ## 📝 Notes
-Output may be verbose — ideal for understanding scheduling behavior
+● Output may be verbose — ideal for understanding scheduling behavior
 
-For accurate results, run on a system with minimal background processes
+● For accurate results, run on a system with minimal background processes
 
-Default config should yield an average turnaround time of ~1210ms
+● Default config should yield an average turnaround time of ~1210ms
 
 ## 📁 License
 This project is open-source and available under the MIT License.
